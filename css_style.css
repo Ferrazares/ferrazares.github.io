@@ -47,6 +47,7 @@ article {
   margin-left: 150px;
   padding: 20px;
   width: 70%;
+  min-width: 300px;
   background-color: #ffffff;
   height: auto; /* only for demonstration, should be removed */
 }
