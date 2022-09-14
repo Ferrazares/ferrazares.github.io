@@ -1,0 +1,4 @@
+cd /Volumes/GoogleDrive-109693337169056844052/My\ Drive/School/personal_website/ferrazares.github.io
+git add --all
+git commit -m "Initial commit"
+git push -u origin main
