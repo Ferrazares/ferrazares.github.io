@@ -18,7 +18,7 @@ nav {
   height:200%;
   background-color: rgb(222, 221, 221);
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   top: 0;
   left: 0;
   padding: 20px;
@@ -49,7 +49,7 @@ article {
   width: 70%;
   min-width: 300px;
   background-color: #ffffff;
-  position: relative;
+  position: absolute;
   /* height: auto;  */
 }
 
@@ -59,21 +59,41 @@ section::after {
   display: table;
   clear: both;
 }
+
 /* 
 @media screen and (max-width: 600px) {
   nav{
+    width: 20%;
+    min-width: 70px;
+    padding: 0px;
+  }
+  article {
+    width: 80%;
+    height: auto;
+    margin-left: max(20%, 70px);
+  } */
+
+
+@media screen and (max-width: 600px) {
+  nav{
     width: 100%;
-    height: 160px;
+    height: 150px;
     margin-left: 0px;
-    padding: 10px;
+    padding: 0px;
+    position: absolute;
+    vertical-align:middle;
   }
   article {
     width: 100%;
     height: auto;
+    padding: 0px;
     margin-left: 0px;
-    margin-top: 250px;
+    margin-top: 150px;
   }
-} */
+  nav ul {
+    line-height: 35px;
+  }
+}
 
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
