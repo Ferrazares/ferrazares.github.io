@@ -15,9 +15,9 @@ nav {
   /* width: 10%; */
   /* min-width: 150px; */
   width: 150px;
-  height:100%;
+  height:200%;
   background-color: rgb(222, 221, 221);
-  position: absolute;
+  position: fixed;
   z-index: 0;
   top: 0;
   left: 0;
@@ -49,6 +49,7 @@ article {
   width: 70%;
   min-width: 300px;
   background-color: #ffffff;
+  position: relative;
   /* height: auto;  */
 }
 
