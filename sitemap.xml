@@ -6,19 +6,20 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 
+
 <url>
-  <loc>https://ferrazares.github.io/index.html</loc>
-  <lastmod>2022-09-14T21:53:03+00:00</lastmod>
+  <loc>https://ferrazares.github.io/</loc>
+  <lastmod>2022-09-16T21:32:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://ferrazares.github.io/research.html</loc>
-  <lastmod>2022-09-14T21:53:03+00:00</lastmod>
+  <lastmod>2022-09-16T21:32:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://ferrazares.github.io/coming_soon.html</loc>
-  <lastmod>2022-09-14T21:53:03+00:00</lastmod>
+  <loc>https://ferrazares.github.io/cv.html</loc>
+  <lastmod>2022-09-16T21:32:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
