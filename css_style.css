@@ -1,5 +1,4 @@
-/* <style> */
-* {
+<style>* {
   box-sizing: border-box;
 
 }
@@ -30,10 +29,27 @@ section::after {
   clear: both;
 }
 
+/* create columns for image and about */
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.text-info {
+  margin-left: 20px;
+  /* Adjust the margin as needed */
+}
+
+.about {
+  margin-top: 20px;
+  /* Add margin to separate the 'About' section from the profile info */
+}
+
+
 /* Set font size for h1 */
 h1 {
   font-size: 24px;
-    font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   /* Adjust the font size as needed */
 }
 
@@ -51,3 +67,4 @@ h2 {
   /* Set font weight to normal (not bold) */
 }
 
+</style>
