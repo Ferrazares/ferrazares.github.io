@@ -14,7 +14,7 @@ article {
   float: left;
   /* margin-left: 50px; */
   padding: 30px;
-  width: 100%;
+  /*width: 95%;*/
   min-width: 300px;
   max-width: 1000px;
   background-color: #ffffff;
@@ -31,19 +31,33 @@ section::after {
 
 /* create columns for image and about */
 .profile-info {
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+  }
 
-.text-info {
-  margin-left: 20px;
-  /* Adjust the margin as needed */
-}
+  .text-info {
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
 
-.about {
-  margin-top: 20px;
-  /* Add margin to separate the 'About' section from the profile info */
-}
+  .about {
+    margin-top: 20px; /* Add margin to separate the 'About' section from the profile info */
+  }
+
+  /* Media query for screens smaller than a certain width (e.g., 768px) */
+  @media screen and (max-width: 568px) {
+    .profile-info {
+      display: block; /* Revert to the original style for smaller screens */
+    }
+
+    .text-info {
+      margin-left: 0; /* Remove the margin for smaller screens */
+      margin-top: 10px; /* Add some margin between the image and text for smaller screens */
+    }
+
+    .about {
+      margin-top: 20px; /* Keep the margin for 'About' section for smaller screens */
+    }
+  }
 
 
 /* Set font size for h1 */
