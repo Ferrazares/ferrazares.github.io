@@ -44,10 +44,11 @@ body {
 
 article {
   float: left;
-  margin-left: 50px;
-  padding: 20px;
-  width: 70%;
+  /* margin-left: 50px; */
+  padding: 30px;
+  width: 100%;
   min-width: 300px;
+  max-width: 1000px;
   background-color: #ffffff;
   position: absolute;
   /* height: auto;  */
