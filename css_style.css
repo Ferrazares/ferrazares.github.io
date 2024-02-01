@@ -1,7 +1,7 @@
 /* <style> */
 * {
   box-sizing: border-box;
-  
+
 }
 
 body {
@@ -10,12 +10,12 @@ body {
 
 
 /* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  /* width: 10%; */
-  /* min-width: 150px; */
-  width: 150px;
-  height:200%;
+/* nav { */
+/* float: left; */
+/* width: 10%; */
+/* min-width: 150px; */
+/* width: 150px;
+  height: 200%;
   background-color: rgb(222, 221, 221);
   position: fixed;
   z-index: 1;
@@ -23,28 +23,28 @@ nav {
   left: 0;
   padding: 20px;
   overflow-x: hidden;
-}
+} */
 
-nav a {
-    /* padding: 6px 8px 6px 16px; */
-    /* text-decoration: none; */
-    color: #000000;
-    display: block;
-  }
+/* nav a { */
+/* padding: 6px 8px 6px 16px; */
+/* text-decoration: none; */
+/* color: #000000; */
+/* display: block; */
+/* } */
 
 /* Style the list inside the menu */
-nav ul {
+/* nav ul {
   list-style-type: none;
   padding: 0;
-}
+} */
 
-nav a:hover {
-    color: #1e2cee;
-  }
+/* nav a:hover {
+  color: #1e2cee;
+} */
 
 article {
   float: left;
-  margin-left: 150px;
+  margin-left: 50px;
   padding: 20px;
   width: 70%;
   min-width: 300px;
@@ -60,7 +60,7 @@ section::after {
   clear: both;
 }
 
-/* 
+/*
 @media screen and (max-width: 600px) {
   nav{
     width: 20%;
@@ -73,16 +73,17 @@ section::after {
     margin-left: max(20%, 70px);
   } */
 
-
+/*
 @media screen and (max-width: 600px) {
-  nav{
+  nav {
     width: 100%;
     height: 150px;
     margin-left: 0px;
     padding: 0px;
     position: absolute;
-    vertical-align:middle;
+    vertical-align: middle;
   }
+
   article {
     width: 100%;
     height: auto;
@@ -90,9 +91,31 @@ section::after {
     margin-left: 0px;
     margin-top: 150px;
   }
+
   nav ul {
     line-height: 35px;
   }
+} */
+
+
+/* Set font size for h1 */
+h1 {
+  font-size: 24px;
+  /* Adjust the font size as needed */
+}
+
+/* Set font size for h2 */
+h2 {
+  font-size: 20px;
+  /* Adjust the font size as needed */
+}
+
+/* Define a CSS class for italic headers */
+.italic-header {
+  font-style: italic;
+  /* Italicize the text */
+  font-weight: normal;
+  /* Set font weight to normal (not bold) */
 }
 
 
@@ -112,18 +135,18 @@ section::after {
 
 
 
-/* 
+/*
 
 
   .main {
-    margin-left: 160px; 
+    margin-left: 160px;
     padding: 0px 10px;
   }
-  
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-  } 
+  }
 */
-/* 
+/*
 </style>  */
