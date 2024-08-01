@@ -31,33 +31,39 @@ section::after {
 
 /* create columns for image and about */
 .profile-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.text-info {
+  margin-left: 20px;
+  /* Adjust the margin as needed */
+}
+
+.about {
+  margin-top: 20px;
+  /* Add margin to separate the 'About' section from the profile info */
+}
+
+/* Media query for screens smaller than a certain width (e.g., 768px) */
+@media screen and (max-width: 568px) {
+  .profile-info {
+    display: block;
+    /* Revert to the original style for smaller screens */
   }
 
   .text-info {
-    margin-left: 20px; /* Adjust the margin as needed */
+    margin-left: 0;
+    /* Remove the margin for smaller screens */
+    margin-top: 10px;
+    /* Add some margin between the image and text for smaller screens */
   }
 
   .about {
-    margin-top: 20px; /* Add margin to separate the 'About' section from the profile info */
+    margin-top: 20px;
+    /* Keep the margin for 'About' section for smaller screens */
   }
-
-  /* Media query for screens smaller than a certain width (e.g., 768px) */
-  @media screen and (max-width: 568px) {
-    .profile-info {
-      display: block; /* Revert to the original style for smaller screens */
-    }
-
-    .text-info {
-      margin-left: 0; /* Remove the margin for smaller screens */
-      margin-top: 10px; /* Add some margin between the image and text for smaller screens */
-    }
-
-    .about {
-      margin-top: 20px; /* Keep the margin for 'About' section for smaller screens */
-    }
-  }
+}
 
 
 /* Set font size for h1 */
@@ -83,42 +89,46 @@ h2 {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    /*padding: 10px;*/
-    /*width: 25%;*/
-    border: 2px solid black; /* Add black border */
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  /*padding: 10px;*/
+  /*width: 25%;*/
+  border: 2px solid black;
+  /* Add black border */
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-    padding: 0 10px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }
 
 .content p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 
 /* Style the horizontal divider */
 h1 {
-    font-weight: normal; /* Make the font weight normal (not bold) */
-    font-size: 1.5em; /* Adjust the font size to be bigger */
-    margin-bottom: 5px; /* Adjust bottom margin of the title for closer spacing */
+  font-weight: normal;
+  /* Make the font weight normal (not bold) */
+  font-size: 1.5em;
+  /* Adjust the font size to be bigger */
+  margin-bottom: 5px;
+  /* Adjust bottom margin of the title for closer spacing */
 }
 
 /* Style the horizontal divider */
 .divider {
-    border: none;
-    border-top: 2px solid black;
-    /*margin: 0 10px;  Adjust left and right margins */
+  border: none;
+  border-top: 2px solid black;
+  /*margin: 0 10px;  Adjust left and right margins */
 }
 
 
