@@ -135,4 +135,34 @@ h1 {
 }
 
 
+/* Media query for smaller screens (1440p) */
+@media (max-width: 2560px) {
+  body {
+    font-size: 14px; /* Adjust as necessary for 1440p screens */
+  }
+
+  .collapsible {
+    font-size: 14px; /* Adjust button font size as necessary */
+  }
+
+  .content p {
+    font-size: 14px; /* Adjust content font size as necessary */
+  }
+}
+
+/* Media query for even smaller screens (1080p and below) */
+@media (max-width: 1920px) {
+  body {
+    font-size: 13px; /* Adjust as necessary for 1080p screens */
+  }
+
+  .collapsible {
+    font-size: 13px; /* Adjust button font size as necessary */
+  }
+
+  .content p {
+    font-size: 13px; /* Adjust content font size as necessary */
+  }
+}
+
 </style>
