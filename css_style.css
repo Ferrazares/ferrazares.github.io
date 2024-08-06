@@ -142,11 +142,11 @@ h1 {
   }
 
   .collapsible {
-    font-size: 14px; /* Adjust button font size as necessary */
+    font-size: 15px; /* Adjust button font size as necessary */
   }
 
   .content p {
-    font-size: 14px; /* Adjust content font size as necessary */
+    font-size: 15px; /* Adjust content font size as necessary */
   }
 
   .profile-info img {
@@ -158,15 +158,15 @@ h1 {
 /* Media query for even smaller screens (1080p and below) */
 @media (max-width: 1920px) {
   body {
-    font-size: 13px; /* Adjust as necessary for 1080p screens */
+    font-size: 14px; /* Adjust as necessary for 1080p screens */
   }
 
   .collapsible {
-    font-size: 13px; /* Adjust button font size as necessary */
+    font-size: 14px; /* Adjust button font size as necessary */
   }
 
   .content p {
-    font-size: 13px; /* Adjust content font size as necessary */
+    font-size: 14px; /* Adjust content font size as necessary */
   }
 
   .profile-info img {
