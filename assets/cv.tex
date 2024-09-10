@@ -17,7 +17,10 @@
 \usepackage{verbatim}
 \usepackage{hyperref}
 \usepackage{sectsty}
+% \usepackage{librefranklin}
+\usepackage{helvet}
 
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
 \newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
 \newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
@@ -34,28 +37,59 @@
 \pagenumbering{gobble}
 \sectionfont{\fontsize{12}{15}\selectfont}
 
+\usepackage[pages=some]{background} % Enables background image on specific pages
+\backgroundsetup{
+    scale=.18,
+    color=black,
+    opacity=1,
+    angle=0,
+    position=current page.north,
+    vshift=-250mm,
+     hshift=280mm, 
+    contents={%
+        \includegraphics[width=\paperwidth]{ucsb_seal_navy.png}
+    }
+}
+
+
 \begin{document}
 % \noindent
-\begin{center}
-    {\Large
-        \textbf{\textsc{Toshio Ferrazares}}}
-\end{center}
+% \begin{center}
+%     {\LARGE
+%         \textbf{\textsc{Toshio Ferrazares}}}
+% \end{center}
+
+\BgThispage 
+\noindent % Ensures no indentation at the beginning of the line
+\begin{minipage}[t]{0.48\textwidth}
+    \raggedright
+    \hspace{-2em}{\LARGE \textbf{\textsc{Toshio Ferrazares}}} \vskip .5em
+    Department of Economics\\
+    University of California, Santa Barbara\\
+    \texttt{ferrazares.github.io} \\
+        \texttt{ferrazares@ucsb.edu}
+\end{minipage}%
+\hfill % Horizontal fill to push the next minipage to the right
+\begin{minipage}[t]{0.48\textwidth}
+    \raggedleft
+    % \raisebox{-\height}{\includegraphics[width=7em]{ucsb_seal_navy.png}} % Adjust the image position
+\end{minipage}
 
 
+
+% \vskip 2em
+% \hspace{-2em}\textbf{ADDRESS}
+
+% Department of Economics
+
+% University of California
+
+% Santa Barbara, CA 93106
+
+% Email: ferrazares@ucsb.edu
 
 \vskip 2em
-\hspace{-1em}\textbf{ADDRESS}
-
-Department of Economics
-
-University of California
-
-Santa Barbara, CA 93106
-
-Email: ferrazares@ucsb.edu
-
-\vskip 2em
-\hspace{-1em}\textbf{EDUCATION}
+\hspace{-2em}\textbf{EDUCATION} \vskip .5em
 
 UC Santa Barbara
 
@@ -71,7 +105,8 @@ San Diego State University
 \quad  B.A., Economics, Minor in Mathematics, 2017
 
 \vskip 2em
-\hspace{-1em}\textbf{REFERENCES}
+\hspace{-2em}\textbf{REFERENCES} \vskip .5em
+
 
 \begin{minipage}[t]{0.45\textwidth}
     Professor Heather Royer (Chair) \\
@@ -92,12 +127,12 @@ San Diego State University
 
 
 \vskip 2em
-\hspace{-1em}\textbf{PUBLICATIONS}
+\hspace{-2em}\textbf{PUBLICATIONS}\vskip .5em
 
 "Monitoring Police with Body-Worn Cameras: Evidence from Chicago," \emph{Journal of Urban Economics}, 2024.
 
 \vskip 2em
-\hspace{-1em}\textbf{WORK-IN-PROGRESS}
+\hspace{-2em}\textbf{WORK-IN-PROGRESS}\vskip .5em
 
 "Shift Structure and Cognitive Depletion: Evidence from Police Officers", (\emph{Job Market Paper}).
 \vskip 1em
@@ -112,7 +147,7 @@ San Diego State University
 
 \clearpage
 % \vskip 2em
-\hspace{-1em}\textbf{HONORS AND AWARDS}
+\hspace{-2em}\textbf{HONORS AND AWARDS}\vskip .5em
 \vskip .5em
 
 \begin{tabular}{ ll }
@@ -127,15 +162,16 @@ San Diego State University
 
 
 \vskip 2em
-\hspace{-1em}\textbf{EMPLOYMENT AND EXPERIENCE}
+\hspace{-2em}\textbf{EMPLOYMENT AND EXPERIENCE}\vskip .5em
 \vskip .5em
 
 \begin{tabular}{ ll }
     2023-24   & Teaching Assistant, Labor Economics, Personnel Economics II        \\
-    2021-     & Research Assistant, Professor Heather Royer                        \\
+    2022-23   & Teaching Assistant, Data Wrangling for Economists        \\
+    2021-Present     & Research Assistant, Professor Heather Royer                        \\
     2020-2021 & Teaching Assistant, Intro to Macroeconomics                        \\
     2019-2020 & Teaching Assistant, Intro to Microeconomics                        \\
-    2019-     & Center for Health Economics and Policy Studies, Doctoral Affiliate \\
+    2019-Present     & Center for Health Economics and Policy Studies, Doctoral Affiliate \\
     2017-2019 & Research Assistant, Professor Joseph Sabia                         \\
 \end{tabular}
 
