@@ -1,8 +1,8 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[left=1.1in, right=1in, top=1in, bottom=1in]{geometry}
+\usepackage[left=1.1in, right=.5in, top=.75in, bottom=.5in]{geometry}
 \usepackage{graphicx}
 \usepackage{dcolumn}
 \usepackage{booktabs}
@@ -19,6 +19,7 @@
 \usepackage{sectsty}
 % \usepackage{librefranklin}
 \usepackage{helvet}
+\usepackage{longtable}
 
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
@@ -44,8 +45,8 @@
     opacity=1,
     angle=0,
     position=current page.north,
-    vshift=-250mm,
-     hshift=280mm, 
+    vshift=-210mm,
+     hshift=280mm,
     contents={%
         \includegraphics[width=\paperwidth]{ucsb_seal_navy.png}
     }
@@ -59,7 +60,7 @@
 %         \textbf{\textsc{Toshio Ferrazares}}}
 % \end{center}
 
-\BgThispage 
+\BgThispage
 \noindent % Ensures no indentation at the beginning of the line
 \begin{minipage}[t]{0.48\textwidth}
     \raggedright
@@ -67,7 +68,7 @@
     Department of Economics\\
     University of California, Santa Barbara\\
     \texttt{ferrazares.github.io} \\
-        \texttt{ferrazares@ucsb.edu}
+    \texttt{ferrazares@ucsb.edu}
 \end{minipage}%
 \hfill % Horizontal fill to push the next minipage to the right
 \begin{minipage}[t]{0.48\textwidth}
@@ -108,19 +109,15 @@ San Diego State University
 \hspace{-2em}\textbf{REFERENCES} \vskip .5em
 
 
-\begin{minipage}[t]{0.45\textwidth}
+\begin{minipage}[t]{0.34\textwidth}
     Professor Heather Royer (Chair) \\
     \texttt{heather.royer@ucsb.edu}
 \end{minipage}
-\hfill
-\begin{minipage}[t]{0.45\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
     Professor Peter Kuhn \\
     \texttt{peter.kuhn@ucsb.edu}
 \end{minipage}
-
-\vspace{0.5cm}
-
-\begin{minipage}[t]{0.45\textwidth}
+\begin{minipage}[t]{0.3\textwidth}
     Professor Kevin Schnepel \\
     \texttt{kevin\_schnepel@sfu.ca}
 \end{minipage}
@@ -140,13 +137,12 @@ San Diego State University
 "The Effect of ShotSpotter Technology on Police Response Times", with Michael Topper, \emph{Under Review}.
 \vskip 1em
 
-"Have U.S. Gun Buyback Programs Misfired?" with Joseph J. Sabia and D. Mark Anderson, \emph{Revisions Requested at Journal of Policy Analysis and Management}. NBER Working Paper \#28763.
+"Have U.S. Gun Buyback Programs Misfired?" with Joseph J. Sabia and D. Mark Anderson, Revisions Requested at \emph{Journal of Policy Analysis and Management}. NBER Working Paper \#28763.
 \vskip 1em
 
 “Drinking Water Contaminants and Infant Health”, with Katie Grooms, Heather Royer, and Kevin Schnepel.
 
-\clearpage
-% \vskip 2em
+\vskip 2em
 \hspace{-2em}\textbf{HONORS AND AWARDS}\vskip .5em
 \vskip .5em
 
@@ -154,25 +150,25 @@ San Diego State University
     2024       & Dissertation Summer Fellowship (UCSB)          \\
     2023       & Research Quarter Fellowship (UCSB)             \\
     2021       & Best 2nd Year Paper Award (UCSB)               \\
-    2019       & M.C. Madhavan Prize (SDSU), 1 of 1 award       \\
+    2019       & M.C. Madhavan Prize (SDSU)                     \\
     2017, 2018 & McCuen Fellowship (SDSU)                       \\
     2017, 2018 & Center for Public Economics Scholarship (SDSU) \\
     2017, 2018 & The Weintraub Paper Award (SDSU)
 \end{tabular}
 
-
+\clearpage
 \vskip 2em
 \hspace{-2em}\textbf{EMPLOYMENT AND EXPERIENCE}\vskip .5em
 \vskip .5em
 
-\begin{tabular}{ ll }
-    2023-24   & Teaching Assistant, Labor Economics, Personnel Economics II        \\
-    2022-23   & Teaching Assistant, Data Wrangling for Economists        \\
-    2021-Present     & Research Assistant, Professor Heather Royer                        \\
-    2020-2021 & Teaching Assistant, Intro to Macroeconomics                        \\
-    2019-2020 & Teaching Assistant, Intro to Microeconomics                        \\
-    2019-Present     & Center for Health Economics and Policy Studies, Doctoral Affiliate \\
-    2017-2019 & Research Assistant, Professor Joseph Sabia                         \\
+\begin{tabular}{ll}
+    2023-24      & Teaching Assistant, Labor Economics, Personnel Economics II        \\
+    2022-23      & Teaching Assistant, Data Wrangling for Economists                  \\
+    2021-Present & Research Assistant, Professor Heather Royer                        \\
+    2020-2021    & Teaching Assistant, Intro to Macroeconomics                        \\
+    2019-2020    & Teaching Assistant, Intro to Microeconomics                        \\
+    2019-Present & Center for Health Economics and Policy Studies, Doctoral Affiliate \\
+    2017-2019    & Research Assistant, Professor Joseph Sabia                         \\
 \end{tabular}
 
 \vskip 1em
