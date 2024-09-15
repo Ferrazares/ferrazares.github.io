@@ -1,0 +1,259 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[left=1.1in, right=1in, top=.75in, bottom=.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{etoolbox}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{sectsty}
+% \usepackage{librefranklin}
+% \usepackage{helvet}
+% \usepackage{ebgaramond}
+\usepackage{changepage}
+\usepackage{longtable}
+
+% \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+\newcolumntype{R}[1]{>{\PreserveBackslash\raggedleft}p{#1}}
+\newcolumntype{L}[1]{>{\PreserveBackslash\raggedright}p{#1}}
+\newcommand{\sym}[1]{\rlap{#1}}
+\newcolumntype{d}[1]{D{.esesttabn t}{.}{#1}}
+
+\newcommand\mc[1]{\multicolumn{1}{c}{#1}}% <---
+\interfootnotelinepenalty=10000
+\setlength{\parindent}{0em}
+% \onehalfspacing
+\singlespacing
+
+\pagenumbering{gobble}
+\sectionfont{\fontsize{12}{15}\selectfont}
+
+\usepackage[pages=some]{background} % Enables background image on specific pages
+\backgroundsetup{
+    scale=.18,
+    color=black,
+    opacity=1,
+    angle=0,
+    position=current page.north,
+    vshift=-210mm,
+     hshift=280mm,
+    contents={%
+        \includegraphics[width=\paperwidth]{ucsb_seal_navy.png}
+    }
+}
+
+% \tolerance=1
+% \emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\begin{document}
+% \noindent
+% \begin{center}
+%     {\LARGE
+%         \textbf{\textsc{Toshio Ferrazares}}}
+% \end{center}
+
+\BgThispage
+\noindent % Ensures no indentation at the beginning of the line
+\begin{minipage}[t]{0.48\textwidth}
+    \raggedright
+    \hspace{-2em}{\LARGE \textbf{\textsc{Toshio Ferrazares}}} \vskip .5em
+    Department of Economics\\
+    University of California, Santa Barbara\\
+    \texttt{ferrazares.github.io} \\
+    \texttt{ferrazares@ucsb.edu}
+\end{minipage}%
+\hfill % Horizontal fill to push the next minipage to the right
+\begin{minipage}[t]{0.48\textwidth}
+    \raggedleft
+    % \raisebox{-\height}{\includegraphics[width=7em]{ucsb_seal_navy.png}} % Adjust the image position
+\end{minipage}
+
+
+
+% \vskip 2em
+% \hspace{-2em}\textbf{ADDRESS}
+
+% Department of Economics
+
+% University of California
+
+% Santa Barbara, CA 93106
+
+% Email: ferrazares@ucsb.edu
+
+\vskip 2em
+\hspace{-2em}\textbf{EDUCATION} \vskip .5em
+
+UC Santa Barbara
+
+\quad  Ph.D. Economics, 2025 (expected)
+
+\quad  Field(s): \emph{Labor Economics}, \emph{Public Economics}
+\vskip 1em
+
+San Diego State University
+
+\quad  M.A., Economics, 2019
+
+\quad  B.A., Economics, Minor in Mathematics, 2017
+
+\vskip 2em
+\hspace{-2em}\textbf{REFERENCES} \vskip .5em
+
+
+\begin{minipage}[t]{0.34\textwidth}
+    Professor Heather Royer \\
+    UC Santa Barbara \\
+    Committee Chair \\ 
+    \texttt{heather.royer@ucsb.edu}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+    Professor Peter Kuhn \\
+        UC Santa Barbara \\
+    Committee Member \\ 
+    \texttt{peter.kuhn@ucsb.edu}
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+    Professor Kevin Schnepel \\
+        Simon Fraser University \\
+    Committee Member \\ 
+    \texttt{kevin\_schnepel@sfu.ca}
+\end{minipage}
+
+\vskip 2em
+\hspace{-2em}\textbf{JOB MARKET PAPER}\vskip .5em
+"Shift Structure and Cognitive Depletion: Evidence from Police Officers".
+\vskip 1em
+\begin{adjustwidth}{3em}{0em}
+{\small    \textbf{Abstract}: Decision-making, risk-taking, and situational awareness are all important factors for effective and equitable policing.
+    However, these factors can also be affected by fatigue, overwork, and cognitive stress, which can accumulate as police officers continue to work.
+    This paper studies how working consecutive days affects police officer outcomes and activity using rich data from the Chicago Police Department.
+    To deal with potential selection of working days, I leverage arbitrarily-assigned fixed schedules as well as a two-way fixed effects design that uses both within-officer and within-assignment variation.
+    This approach compares officers with the same roles who differ only on the number of working days leading up to that assignment.
+    I find that, after initially increasing, officers make fewer arrests, conduct fewer stops, patrol less, and are more likely to be injured as they work more days.
+    The declines in activity are driven by reductions towards the end of an officer's shift.
+    Despite this decline in arrests and activity, officers file more use-of-force reports and make more judgement-based discretionary arrests after working many consecutive days.
+    }
+\end{adjustwidth}
+
+\vskip 2em
+\hspace{-2em}\textbf{PUBLICATIONS}\vskip .5em
+
+"Monitoring Police with Body-Worn Cameras: Evidence from Chicago," \emph{Journal of Urban Economics}, 2024.
+\vskip 1em
+\begin{adjustwidth}{3em}{0em}
+{\small    \textbf{Abstract}:
+Using data from the Chicago Police Department on complaints filed by civilians and reports of force filed by officers, this paper estimates the effect of body-worn cameras (BWCs) of officer and civilian behavior. Using a two-way fixed effects design, I find BWCs are associated with a 29\% reduction in use-of-force complaints, driven by white officer-black civilian complaints. Additionally, I find a 34\% reduction in officers reporting striking civilians and a large though less significant reduction in officer firearm usage, potential mechanisms for the reduction in complaints. Importantly, I find no change in officer injury or force from civilians. However, I find evidence of de-policing as officers make fewer drug-related arrests following BWC adoption.
+    }
+\end{adjustwidth}
+
+
+\vskip 2em
+\hspace{-2em}\textbf{WORK-IN-PROGRESS}\vskip .5em
+\begin{enumerate}
+
+
+
+
+\item "The Unintended Consequences of Policing Technology: Evidence from ShotSpotter", with Michael~Topper, \emph{Under Review}.
+\vskip 1em
+\begin{adjustwidth}{3em}{0em}
+{\small    \textbf{Abstract}:
+Technology is integral to police departments, automating officer tasks, but inher-
+ently changing their time allocation. We investigate this by studying ShotSpotter,
+a technology that automates gunfire detection. Following a detection, officers are
+dispatched to the scene, thereby reallocating their time. We leverage this shock to
+officers’ time allocation using the rollout of ShotSpotter across Chicago police dis-
+tricts to study the effects on 911 call response. We find substantial consequences—
+officers are dispatched to calls slower (23\%), arrive on-scene later (13\%), and the
+probability of arrest is decreased 9\%. Consequently, police departments must eval-
+uate their resource capacities prior to implementing technologies.
+    }
+\end{adjustwidth}\vskip 1em
+
+\item "Have U.S. Gun Buyback Programs Misfired?" with Joseph~J.~Sabia and D.~Mark~Anderson, Revisions Requested at \emph{Journal of Policy Analysis and Management}. NBER Working Paper \#28763.
+\vskip 1em
+\begin{adjustwidth}{3em}{0em}
+{\small    \textbf{Abstract}:
+Gun buyback programs (GBPs), which use public funds to purchase civilians' privately-owned
+firearms, aim to reduce gun violence. However, next to nothing is known about their effects on
+firearm-related crime or deaths. Using data from the National Incident Based Reporting System,
+we find no evidence that GBPs reduce gun crime. Given our estimated null findings, with 95
+percent confidence, we can rule out decreases in firearm-related crime of greater than 1.1 percent
+during the year following a buyback. Using data from the National Vital Statistics System, we
+also find no evidence that GBPs reduce suicides or homicides where a firearm was involved.
+These results call into question the efficacy of city gun buyback programs in their current form.
+    }
+\end{adjustwidth}\vskip 1em
+
+\item “Drinking Water Contaminants and Infant Health”, with Katherine~Grooms, Heather~Royer, and Kevin~Schnepel.
+
+\end{enumerate}
+\vskip 2em
+\hspace{-2em}\textbf{HONORS AND AWARDS}\vskip .5em
+\vskip .5em
+
+\begin{tabular}{ ll }
+    2024       & Dissertation Summer Fellowship (UCSB)          \\
+    2023       & Research Quarter Fellowship (UCSB)             \\
+    2021       & Best 2nd Year Paper Award (UCSB)               \\
+    2019       & M.C. Madhavan Prize (SDSU)                     \\
+    2017, 2018 & McCuen Fellowship (SDSU)                       \\
+    2017, 2018 & Center for Public Economics Scholarship (SDSU) \\
+    2017, 2018 & The Weintraub Paper Award (SDSU)
+\end{tabular}
+
+\clearpage
+\vskip 2em
+\hspace{-2em}\textbf{EMPLOYMENT AND EXPERIENCE}\vskip .5em
+\vskip .5em
+
+\begin{tabular}{ll}
+    2023-24      & Teaching Assistant, Labor Economics, Personnel Economics II        \\
+    2022-23      & Teaching Assistant, Data Wrangling for Economists                  \\
+    2021-Present & Research Assistant, Professor Heather Royer                        \\
+    2020-2021    & Teaching Assistant, Intro to Macroeconomics                        \\
+    2019-2020    & Teaching Assistant, Intro to Microeconomics                        \\
+    2019-Present & Center for Health Economics and Policy Studies, Doctoral Affiliate \\
+    2017-2019    & Research Assistant, Professor Joseph Sabia                         \\
+\end{tabular}
+
+\vskip 1em
+Referee Service: \textit{
+    Journal of Labor Economics
+}
+
+\vskip 1em
+Conference Presentations:
+\textbf{2024:} ACLEC (Los Angeles), WEAI Graduate Student Workshop (Seattle),
+\textbf{2023:} WEAI (San Diego), ACLEC Poster (Santa Barbara)
+\textbf{2019:} EEA (New York City), WEAI (San Francisco), APPAM Poster (Washington DC),
+\textbf{2018:} EEA (Boston)
+\vfill
+
+% Last Updated: September 2022
+
+
+
+
+
+
+\end{document}
+
+
+
+
