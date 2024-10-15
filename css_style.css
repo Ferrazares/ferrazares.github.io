@@ -1,96 +1,139 @@
-<style>
-  * {
-    box-sizing: border-box;
-  }
+<style>* {
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Libre Franklin', sans-serif;
-  }
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
 
 article {
-  margin: 0 auto; /* Center the article horizontally */
+  margin: 0 auto;
+  /* Center the article horizontally */
   padding: 30px;
   min-width: 300px;
   max-width: 1000px;
   background-color: #ffffff;
-  position: relative; /* Changed from absolute to relative for better centering with margin auto */
+  position: relative;
+  /* Changed from absolute to relative for better centering with margin auto */
 }
 
 
 
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  .profile-info, .collapsible, .content {
-    display: flex;
-    align-items: center;
-  }
+.profile-info,
+.collapsible,
+.content {
+  display: flex;
+  align-items: center;
+}
 
-  .profile-info, .text-info, .about {
-    margin-top: 20px;
+.profile-info,
+.text-info,
+.about {
+  margin-top: 20px;
+}
+
+.text-info {
+  margin-left: 20px;
+}
+
+h1,
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.italic-header {
+  font-style: italic;
+}
+
+.collapsible {
+  background-color: lightgray;
+  /* White background */
+  color: black;
+  /* Text color */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  border: 1px solid black;
+  /* Border */
+  text-align: left;
+  /* Align text to the left */
+  outline: none;
+  /* Remove default outline */
+  font-size: 15px;
+  /* Font size */
+  margin-bottom: 0px;
+  /* No bottom margin */
+  display: flex;
+  /* Use flexbox */
+  justify-content: space-between;
+  /* Space between text and caret */
+  align-items: center;
+  /* Center vertically */
+  border-radius: 8px;
+  /* Rounded edges */
+  /* padding: 10px 15px; */
+  Padding for spacing transition: background-color 0.3s, border-color 0.3s;
+  /* Smooth transitions */
+}
+
+/* .content {
+  display: none;
+  padding: 0 10px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+} */
+
+.content p {
+  margin: 10px 0;
+}
+
+
+
+/* Styles for the collapsible content */
+.content {
+  display: none;
+  padding: 0 10px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 8px;
+  /* Rounded bottom edges */
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  /* Smooth expand/collapse */
+}
+
+
+
+.divider {
+  border: none;
+  border-top: 2px solid black;
+}
+
+@media screen and (max-width: 568px) {
+  .profile-info {
+    flex-direction: column;
   }
 
   .text-info {
-    margin-left: 20px;
+    margin-left: 0;
+    margin-top: 10px;
   }
+}
 
-  h1, h2 {
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: normal;
-  }
-
-  h1 {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  .italic-header {
-    font-style: italic;
-  }
-
-  .collapsible {
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    border: 1px solid black;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    margin-bottom: 0px;
-    display: block;
-  }
-
-  .content {
-    display: none;
-    padding: 0 10px;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
-
-  .content p {
-    margin: 10px 0;
-  }
-
-  .divider {
-    border: none;
-    border-top: 2px solid black;
-  }
-
-  @media screen and (max-width: 568px) {
-    .profile-info {
-      flex-direction: column;
-    }
-
-    .text-info {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-  }
 </style>
