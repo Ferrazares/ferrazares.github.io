@@ -19,6 +19,14 @@
 \usepackage{sectsty}
 \usepackage{changepage}
 \usepackage{longtable}
+\usepackage{tikz}
+
+\newcommand{\myarrow}[1][]{%
+  \begin{tikzpicture}[#1]%
+    \draw (0,0.7ex) -- (0,0) -- (0.75em,0);
+    \draw (0.55em,0.2em) -- (0.75em,0) -- (0.55em,-0.2em);
+  \end{tikzpicture}%
+}
 
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
 \newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
@@ -32,6 +40,7 @@
 \setlength{\parindent}{0em}
 % \onehalfspacing
 \singlespacing
+
 
 
 
@@ -151,9 +160,9 @@ San Diego State University
 
     \item "\href{https://michaeltopper.netlify.app/media/jmp_michael_topper.pdf}{The Unintended Consequences of Policing Technology: Evidence from ShotSpotter}", with Michael~Topper, \emph{Under Review}.
         \vskip .5em
-   \hspace*{2em}\textbullet\quad Media Coverage: 
-\href{https://www.economist.com/united-states/2023/12/27/americas-new-policing-tech-isnt-cutting-crime?giftId=77056dba-6af1-40be-af4c-0f6e5baf028b}{The Economist}, 
-\href{https://www.chicagotribune.com/2024/03/03/with-shotspotter-staying-in-chicago-for-the-time-being-dispute-continues-over-the-systems-usefulness/}{The Chicago Tribune}, 
+   \hspace*{2em}\textbullet\quad Media Coverage:
+\href{https://www.economist.com/united-states/2023/12/27/americas-new-policing-tech-isnt-cutting-crime?giftId=77056dba-6af1-40be-af4c-0f6e5baf028b}{The Economist},
+\href{https://www.chicagotribune.com/2024/03/03/with-shotspotter-staying-in-chicago-for-the-time-being-dispute-continues-over-the-systems-usefulness/}{The Chicago Tribune},
 \href{https://stateline.org/2024/02/27/chicago-is-the-latest-city-rethinking-disputed-technology-that-listens-for-gunshots/}{Stateline}
 
 
@@ -168,10 +177,10 @@ San Diego State University
                   Consequently, police departments must evaluate their resource capacities prior to implementing technologies.
               }
           \end{adjustwidth}\vskip 1em
-          
+
     \item "\href{https://www.nber.org/system/files/working_papers/w28763/w28763.pdf}{Have U.S. Gun Buyback Programs Misfired?}" with Joseph~J.~Sabia and D.~Mark~Anderson, Revisions Requested at \emph{Journal of Policy Analysis and Management}. NBER Working Paper \#28763.
         \vskip .5em
-   \hspace*{2em}\textbullet\quad Media Coverage: 
+   \hspace*{2em}\textbullet\quad Media Coverage:
 \href{https://www.nbcphiladelphia.com/news/local/broke-in-philly/with-gun-buybacks-philadelphia-fighting-uphill-battle/2823158/}{NBC Philadelphia},
 \href{https://reason.com/2021/05/17/gun-buybacks-dont-seem-to-significantly-lower-gun-crimes-or-gun-deaths/}{Reason},
 \href{https://www.cnn.com/2022/04/16/us/chicago-gun-buybacks/index.html}{CNN},
@@ -191,9 +200,9 @@ San Diego State University
                   Using data from the National Vital Statistics System, we also find no evidence that GBPs reduce suicides or homicides where a firearm was involved. These results call into question the efficacy of city gun buyback programs in their current form.
               }
           \end{adjustwidth}\vskip 1em
-          
+
     \item “Drinking Water Contaminants and Infant Health”, with Katherine~Grooms, Heather~Royer, and Kevin~Schnepel.
-          
+
 \end{enumerate}
 
 
@@ -253,7 +262,7 @@ San Diego State University
     2021-Present & Research Assistant, Professor Heather Royer                        \\
     2020-2021    & Teaching Assistant, Intro to Macroeconomics                        \\
     2019-2020    & Teaching Assistant, Intro to Microeconomics                        \\
-    2019-Present & Center for Health Economics and Policy Studies, Doctoral Affiliate \\
+    2019-Present & Doctoral Affiliate, Center for Health Economics and Policy Studies \\
     2017-2019    & Research Assistant, Professor Joseph Sabia                         \\
 \end{tabular}
 
@@ -270,7 +279,7 @@ Referee Service: \textit{
 \vskip .5em
 
 Southern California Applied Economics Conference (UC Irvine), 2024\\
-\hspace*{2em}\emph{Best Paper Award} for \emph{Shift Structure and Cognitive Depletion: Evidence from Police Officers}\\
+\hspace*{2em}\myarrow\emph{Best Paper Award} for \emph{Shift Structure and Cognitive Depletion: Evidence from Police Officers}\\
 All California Labor Economics Conference (UC Los Angeles), 2024\\
 WEAI Graduate Student Workshop, 2024\\
 Western Economic Association International, 2023\\
@@ -282,7 +291,7 @@ Eastern Economics Association, 2018
 
 
 
-\
+
 
 
 \end{document}
